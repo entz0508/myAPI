@@ -1,0 +1,63 @@
+{
+    "CONFIG":
+    {
+        "PACKAGE_NAME":"com.blueark.slp.kw"
+    },
+    "SERVER_INFO" :
+    {
+        "SERVER_ID":1,
+        "NAME":"SLP Kidswatts",
+        "PORT":17002,
+        "APP_ID":[1000000000],
+        "GOOGLEPLAY_PUBLIC_KEY":"",
+        "SHOP_APPLE_VERIFY_RECEIPT_URL_LIVE":"buy.itunes.apple.com",
+        "SHOP_APPLE_VERIFY_RECEIPT_URL_SANDBOX":"sandbox.itunes.apple.com",
+        "PHOTO" : {
+            "LOCAL_TEMP_PATH":"/data/temp_photo/",
+            "IMG_SERVER":{  "HOST":"14.63.169.217",
+                            "PORT":22,
+                            "USERNAME":"slpphoto",
+                            "PRIVATE_KEY":"-----BEGIN RSA PRIVATE KEY-----\nMIIEoQIBAAKCAQEArKKORpXbJ4Ezy+Gito20O0wXDm0zh3nfn2dt2wsGnzCYq75+\niDgtf6hrWSVvDlO26POW7ELUf5Tfy6HadYAYsqOk/AF293krLvDV6hsFLlMK05BH\n4tGM7Q3IUn07QVGBcAXdh+rPS9oHU/+8JQI1P3moNiDYFMGhbytCkaQ5AqvfNmNmlRJ/u5q6T2Foez2+0ZVQSOJQTF5+1aTJJ5vO9wcU4aEK7rs1upQAqDs11IT6Q6rE\nHFCBh9FnZTvYvLzF0VmYMMAgynVj6Zk1NBuz8lISn2wfT0V7fdJ6qUKCxG3hTs9b\npBGprtV3yZUQ9Dkv3LIRqRUlkPNkeDfvZ+L2HQIBJQKCAQBKpyjEk9RkHDIS+cnS\nZsp6gcTH997ueeQpQXuc/dlZmHlfBkSN7seRJjxCObN70SyAaVYFTVT45m6dPxJc\nUxGZW4WdaGrL4V7IMMs0zWoGMb9+FODQyVGyni0cwIhTmN4G7ceUuJD+NMTmDbkk\nwq8+CxhOwhhAU7tuV+VvaZwc0/z2o9XP6/95bqy/u524dn8WYjDwkK17K6DuHNM3\nSt26mY65itqE099Dn8j7r+2uLAVo6kcT8gQfiTsvjrr958d7XhE6jrIwAcUH1ctJ\nwwkbkV2kU6JBKvf8pUjgS4SNeZY0NLn1j9q8SDpaGdAVRVLKTi6f5+xM3gOiZfQD\nG8xtAoGBAOaBoqdd8zwCklUE6D12mMafTLexM6djb5VAoJsmJznmPQG12Ld4thtk\nAsMNJTG5xQQbI5MzOfd9WUmrcWLay9Kh4fyE6kocozYFX3LnlxOQRtczm4SZgcsB\nrakgMrRfx162ZBESTCtHje5WynisrAP9GN4g3etWm/sY9V0mMszfAoGBAL+6ZeDG\nTYTwOHXPF05KEvJOhYdrYBe8GgVuYYWRl3RRRvketzoi2yYKL7zVDy53+iml6WyK\n9uCBisTb0GV2yPXiLhPUa9qezhZCG1wx8ZtSSxLfzzN/EFMD5pkCYSvdfVc/sVyJ\n6NST4IKCbucWXNxrxGe2bufIlgD3ts36f+CDAoGAK5v8LYB6IBwphbTR/cpUQUC7\nfLLSa8a0PtTgHVo+xcPGWkT/fKgic+J9ECUU3+TgFYiYBxeHgdlxwdRTuMGcLsSu\nNrFcwem+A00f5U5osKyXx9lUxg80OynUvyHEZ1Bj/Sls4KKYyerxVprMXAT98uqx\nrXvW9SwPrAukCrQzH9cCgYAPi6dlQILTbWxclEAo8T/OdRG+3zFOCFUjCPMmgW0l\nG1jIFz9J5yaGizRNlLwKr8gs4/BU6Kw7t3n0SSySmu2zElbDVmmcGrbDiNHJNHtf\nnuN+EiWOjcMNpl7OIsmbxdm691OR4asYJ6prclwE5iM0d3DKI4xzqHrde95jul1l\nOwKBgQCoAaJOomMaP3OKBY99EzlE0iNWs9HqK/bTzvRw843Gaj8mrueQ4QCaE8XN\n4oDZtvnuznhdYncg7kZ9WCOzBxqSqIFT6ZTdSiD343Vlp+58dyU1jL8mh8opQRQA\nG1gmGX3FglsL2BWyvvRXpdwKiNvWH8OEGXsYECLjAG8WmAXKpQ==\n-----END RSA PRIVATE KEY-----\n",
+                            "PHOTO_PATH":"/data/www/images/kw/profile/"}
+        }
+    },
+    "LOG_INFO" :
+    {
+        "LOGGER_LEVEL" : "DEBUG",
+        "FILE_PATH" : "/data/logs/node/slp_kidswatts/slp_kidswatts.log",
+        "CATEGORY" : "SLP_DLA"
+    },
+    "SLP_PLATFORM" : {
+        "URL":"127.0.0.1",
+        "PORT":15001,
+        "PATH_IS_AUTH_SLP_ACCOUNT_WITH_PROFILE":"slp/user/account/isloggedin/withprofile",
+        "PATH_IS_AUTH_SLP_ACCOUNT_WITHOUT_PROFILE":"slp/user/account/isloggedin/withoutprofile"
+    },
+    "MYSQL_SLP_KW_INFO" : {
+      "HOST": "localhost",
+      "PORT": 16612,
+      "USER": "splkwdev",
+      "PASSWORD": "qmffndkzm!!!!",
+      "DATABASE": "slp_kw_info_db",
+      "CONNECTION_LIMIT":5
+    },
+    "MYSQL_SLP_KW" : {
+        "HOST": "localhost",
+        "PORT": 16612,
+        "USER": "splkwdev",
+        "PASSWORD": "qmffndkzm!!!!",
+        "DATABASE": "slp_kw_db",
+        "CONNECTION_LIMIT":5
+    },
+    "MYSQL_SLP_KW_ACTION_LOG" : {
+        "HOST": "localhost",
+        "PORT": 16612,
+        "USER": "splkwapidev",
+        "PASSWORD": "qmffndkzm!!!!",
+        "DATABASE": "slp_kw_action_log_db",
+        "CONNECTION_LIMIT":5
+    },
+    "end" : {
+    }
+
+}

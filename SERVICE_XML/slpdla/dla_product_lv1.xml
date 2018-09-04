@@ -1,0 +1,56 @@
+<!--
+*********************** 상품정보 XML 설명 ***************************
+***   상품구매, QUEST (mission) 에서 이용하는 구매단위의 XML 입니다.
+***   상품을 구매하거나 퀘스트에서 보상을 줄 경우 반드시 이 파일에 product 로 명시되어야 동작합니다.
+***   상품구매 혹은 QUEST 를 통해 카테고리 혹은 에피소드 단위로 권한을 주는 목록이라 생각하시면 됩니다.
+***   POINT 를 0으로 하였을 때 무료로 제공하는 것과 같은 효과를 같습니다.
+***   본 XML 파일의 목적은 POST WEB 방식의 API 에서 가격 및 상품을 믿을 수 있는 서버에 저장하여 빼내어 쓰기 위함입니다.
+***   상품정보 XML 은 각 DLA 레벨 별로 동작합니다. 따라서 같은 상품 같은 내용이라 하더라도 각 파일에 각각 지정되어야 합니다. 
+
+*********************** XML 노드 설명 ***************************
+***   period 는 제공하고 싶은 기간을 날짜 단위로 지정합니다. ex) 1년 = 365
+***   using_unit 은 제공하는 것을 카테고리단위로 할 것인지 에피소드 단위로 할 것인지를 결정합니다.
+***   category_id, 혹은 espisode_id 는 1개 이상의 제공권한을 (,) COMMA 로 구분하여 공백없이 나열합니다.
+***   point 는 포인트 구매 시 차감할 STAR_POINT 값입니다. 0일 경우 무료제공 - 이를 이용하여 QUEST 혹은 이벤트를 생성 할 수 있습니다.
+***   event_date 는 이벤트의 시작일 그리고 종료일을 지정합니다. 이벤트기간이 아닌 경우 해당 상품을 요청 시 서버에서 요청을 거부합니다.
+-->
+<products>
+	<product id="pass_1mon_all_category" type="1" os="android">
+		<title>1개월 이용권 자동결제</title>
+		<period>31</period>
+		<using_unit>category_id</using_unit>
+		<category_id>c002,c009,c005,c004,c003,c011,c008,c001,c007,c006,c010,c012</category_id>
+		<espisode_id></espisode_id>
+		<point>2000</point>
+		<event_date>
+			<start>null</start>
+			<end>null</end>
+		</event_date>
+	</product>
+	
+	<product id="pass_1mon_category" type="1" os="android">
+		<title>1개월 이용권 자동결제</title>
+		<period>31</period>
+		<using_unit>category_id</using_unit>
+		<category_id>c002,c009,c005</category_id>
+		<espisode_id></espisode_id>
+		<point>2000</point>
+		<event_date>
+			<start>null</start>
+			<end>null</end>
+		</event_date>
+	</product>
+	
+	<product id="pass_1mon_episode" type="1" os="android">
+		<title>1개월 이용권 자동결제</title>
+		<period>31</period>
+		<using_unit>espisode_id</using_unit>
+		<category_id></category_id>
+		<espisode_id>ep001,ep002,ep003,ep004,ep005,ep006,ep007,ep008,ep009,ep010,ep011,ep012,ep013,ep014,ep015,ep016</espisode_id>
+		<point>2000</point>
+		<event_date>
+			<start>null</start>
+			<end>null</end>
+		</event_date>
+	</product>
+</products>

@@ -1,0 +1,93 @@
+{
+	"questInfo": {
+		"ver": 1.0,
+		"desc" : "quest card JSON : seq 는 class 별로 1씩 증가합니다. class 는 행동 그룹(내용분류)을 의미합니다.  duplicate_unit 은 중복 단위를 의미합니다. 한번, 월별, 일별등  duplicate_condition 은 중복 조건(Type)을 의미합니다. 계정별 프로필별 등",
+		"author" : "류정현"
+		
+	},
+	"quests" : [
+		{
+			"seq" : 10,
+			"quest_id" : "c_join_f",
+			"desc" : "회원가입",
+			"point" : 10,
+			"class"	: "account",
+			"duplicate_unit" : "once"
+		},
+		{
+			"seq" : 20,
+			"quest_id" : "c_firstprofile_name",
+			"desc" : "첫 프로필정보 이름 변경",
+			"point" : 20,
+			"class"	: "profile",
+			"duplicate_unit" : "once"
+		},
+		{
+			"seq" : 21,
+			"quest_id" : "c_firstprofile_photo",
+			"desc" : "첫 프로필 사진 등록",
+			"point" : 20,
+			"class"	: "profile",
+			"duplicate_unit" : "once"
+		},
+		{
+			"seq" : 30,
+			"quest_id" : "c_firstpurchase_f",
+			"desc" : "첫 구매",
+			"point" : 20,
+			"class"	: "account",
+			"duplicate_unit" : "once"
+		},
+		{
+			"seq" : 40,
+			"quest_id" : "c_review",
+			"desc" : "첫 리뷰",
+			"point" : 20,
+			"class"	: "account",
+			"duplicate_unit" : "once"
+		},
+		{
+			"seq" : 50,
+			"quest_id" : "c_sns_fb",
+			"desc" : "첫 페북 좋아요",
+			"point" : 20,
+			"class"	: "account",
+			"duplicate_unit" : "once"
+		},
+		
+		{
+			"seq" : 60,
+			"quest_id" : "c_newcard_p_f",
+			"desc" : "첫 업데이트 학습카드 확인",
+			"point" : 20,
+			"class"	: "account",
+			"duplicate_unit" : "once"
+		},
+		{
+			"seq" : 61,
+			"quest_id" : "c_newreport1_p_f",
+			"desc" : "첫 LV 1 업데이트 학습리포트 확인",
+			"point" : 20,
+			"class"	: "account",
+			"duplicate_unit" : "once"
+		},
+		
+		
+		{
+			"seq" : 101,
+			"quest_id" : "c_fistvisit_day_1",
+			"desc" : "출석 1 일차",
+			"point" : 20,
+			"class"	: "account",
+			"duplicate_unit" : "month"
+		},
+		{
+			"seq" : 102,
+			"quest_id" : "c_fistvisit_day_2",
+			"desc" : "출석 2 일차",
+			"point" : 20,
+			"class"	: "account",
+			"duplicate_unit" : "month"
+		}
+	]
+}

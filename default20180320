@@ -1,0 +1,458 @@
+server {
+        listen   80;
+        server_name     api.slpplatform
+        client_max_body_size 100M;
+
+        access_log  /data/logs/nginx/api.slpplatform/api.slpplatform.access.log;
+
+        location / {
+	add_header Access-Control-Allow-Origin *;
+                root    /data/www/api.slpplatform/public;
+                index   index.html;
+                expires 0d;
+        }
+
+        location /slp {
+    		add_header Access-Control-Allow-Origin *;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header Host $http_host;
+                proxy_set_header X-NginX-Proxy true;
+
+                proxy_pass      http://127.0.0.1:15001;
+                proxy_redirect off;
+                expires 0d;
+
+  		## Compression
+  		gzip                on;
+  		gzip_vary         on;
+  		gzip_static        on;
+  		gzip_buffers      16 8k;
+  		gzip_comp_level   9;
+  		gzip_http_version 1.0;
+  		gzip_min_length   0;
+  		gzip_types text/plain image/x-icon text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+        }
+
+ 	location /sdla {
+                add_header Access-Control-Allow-Origin *;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header Host $http_host;
+                proxy_set_header X-NginX-Proxy true;
+
+                proxy_pass      http://127.0.0.1:16001;
+                proxy_redirect off;
+                expires 0d;
+
+                ## Compression
+                gzip                on;
+                gzip_vary         on;
+                gzip_static        on;
+                gzip_buffers      16 8k;
+                gzip_comp_level   9;
+                gzip_http_version 1.0;
+                gzip_min_length   0;
+                gzip_types text/plain image/x-icon text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+        }
+ 
+ 	location /sen {
+                add_header Access-Control-Allow-Origin *;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header Host $http_host;
+                proxy_set_header X-NginX-Proxy true;
+
+                proxy_pass      http://127.0.0.1:16002;
+                proxy_redirect off;
+                expires 0d;
+
+                ## Compression
+                gzip                on;
+                gzip_vary         on;
+                gzip_static        on;
+                gzip_buffers      16 8k;
+                gzip_comp_level   9;
+                gzip_http_version 1.0;
+                gzip_min_length   0;
+                gzip_types text/plain image/x-icon text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+        }
+
+ 	location /skw {
+                add_header Access-Control-Allow-Origin *;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header Host $http_host;
+                proxy_set_header X-NginX-Proxy true;
+
+                proxy_pass      http://127.0.0.1:17002;
+                proxy_redirect off;
+                expires 0d;
+
+                ## Compression
+                gzip                on;
+                gzip_vary         on;
+                gzip_static        on;
+                gzip_buffers      16 8k;
+                gzip_comp_level   9;
+                gzip_http_version 1.0;
+                gzip_min_length   0;
+                gzip_types text/plain image/x-icon text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+        }
+
+	location /nde {
+                add_header Access-Control-Allow-Origin *;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header Host $http_host;
+                proxy_set_header X-NginX-Proxy true;
+
+                proxy_pass      http://127.0.0.1:18001;
+                proxy_redirect off;
+                expires 0d;
+
+                ## Compression
+                gzip                on;
+                gzip_vary         on;
+                gzip_static        on;
+                gzip_buffers      16 8k;
+                gzip_comp_level   9;
+                gzip_http_version 1.0;
+                gzip_min_length   0;
+                gzip_types text/plain image/x-icon text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+        }
+	location /oauth {
+                add_header Access-Control-Allow-Origin *;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header Host $http_host;
+                proxy_set_header X-NginX-Proxy true;
+
+                proxy_pass      http://127.0.0.1:19001;
+                proxy_redirect off;
+                expires 0d;
+
+                ## Compression
+                gzip                on;
+                gzip_vary         on;
+                gzip_static        on;
+                gzip_buffers      16 8k;
+                gzip_comp_level   9;
+                gzip_http_version 1.0;
+                gzip_min_length   0;
+                gzip_types text/plain image/x-icon text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+        }
+	location /adb {
+                add_header Access-Control-Allow-Origin *;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header Host $http_host;
+                proxy_set_header X-NginX-Proxy true;
+
+                proxy_pass      http://127.0.0.1:20001;
+                proxy_redirect off;
+                expires 0d;
+
+                ## Compression
+                gzip                on;
+                gzip_vary         on;
+                gzip_static        on;
+                gzip_buffers      16 8k;
+                gzip_comp_level   9;
+                gzip_http_version 1.0;
+                gzip_min_length   0;
+                gzip_types text/plain image/x-icon text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+        }
+	location /jsu {
+                add_header Access-Control-Allow-Origin *;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header Host $http_host;
+                proxy_set_header X-NginX-Proxy true;
+
+                proxy_pass      http://127.0.0.1:21001;
+                proxy_redirect off;
+                expires 0d;
+
+                ## Compression
+                gzip                on;
+                gzip_vary         on;
+                gzip_static        on;
+                gzip_buffers      16 8k;
+                gzip_comp_level   9;
+                gzip_http_version 1.0;
+                gzip_min_length   0;
+                gzip_types text/plain image/x-icon text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+        }	
+
+
+
+}
+
+
+server { 
+     	listen 443; 
+     	server_name api.doralab.co.kr; 
+
+     	ssl on; 
+#     	ssl_certificate /etc/nginx/ssl/api.doralab.co.kr_crt.pem; 
+#     	ssl_certificate_key /etc/nginx/ssl/api.doralab.co.kr_key.pem;
+
+	ssl_certificate "/etc/letsencrypt/live/apidev.doralab.co.kr/fullchain.pem";
+	ssl_certificate_key "/etc/letsencrypt/live/apidev.doralab.co.kr/privkey.pem";
+	ssl_dhparam "/etc/ssl/certs/dhparam.pem";
+
+     	ssl_session_timeout 5m; 
+
+     	ssl_protocols TLSv1 TLSv1.1 TLSv1.2; 
+     	ssl_ciphers ALL:!ADH:!EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+EXP; 
+ 	ssl_prefer_server_ciphers on;
+
+ 	access_log  /data/logs/nginx/ssl.doralab.co.kr/ssl.doralab.co.kr.access.log;
+ 	error_log   /data/logs/nginx/ssl.doralab.co.kr/ssl.doralab.co.kr.error.log;
+
+ 	location / {
+            	add_header Access-Control-Allow-Origin *;
+            	proxy_set_header X-Real-IP $remote_addr;
+            	proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            	proxy_set_header Host $http_host;
+            	proxy_set_header X-NginX-Proxy true;
+  
+            	root /data/www/api.slpplatform/public;
+            	index index.html;
+     		proxy_pass      http://localhost:15001; 
+            	#proxy_pass http://localhost:9000;
+            	expires 0d;
+        }
+
+        location /slp {
+                add_header Access-Control-Allow-Origin *;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header Host $http_host;
+                proxy_set_header X-NginX-Proxy true;
+
+                proxy_pass      http://localhost:15001;
+                proxy_redirect off;
+                expires 0d;
+
+                ## Compression
+                gzip                on;
+                gzip_vary         on;
+                gzip_static        on;
+                gzip_buffers      16 8k;
+                gzip_comp_level   9;
+                gzip_http_version 1.0;
+                gzip_min_length   0;
+                gzip_types text/plain image/x-icon text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+        }
+
+        location /sdla {
+                add_header Access-Control-Allow-Origin *;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header Host $http_host;
+                proxy_set_header X-NginX-Proxy true;
+
+                proxy_pass      http://localhost:16001;
+                proxy_redirect off;
+                expires 0d;
+
+                ## Compression
+                gzip                on;
+                gzip_vary         on;
+                gzip_static        on;
+                gzip_buffers      16 8k;
+                gzip_comp_level   9;
+                gzip_http_version 1.0;
+                gzip_min_length   0;
+                gzip_types text/plain image/x-icon text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+        }
+
+        location /sen {
+                add_header Access-Control-Allow-Origin *;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header Host $http_host;
+                proxy_set_header X-NginX-Proxy true;
+
+                proxy_pass      http://localhost:16002;
+                proxy_redirect off;
+                expires 0d;
+
+                ## Compression
+                gzip                on;
+                gzip_vary         on;
+                gzip_static        on;
+                gzip_buffers      16 8k;
+                gzip_comp_level   9;
+                gzip_http_version 1.0;
+                gzip_min_length   0;
+                gzip_types text/plain image/x-icon text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+        }
+
+        location /skw {
+                add_header Access-Control-Allow-Origin *;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header Host $http_host;
+                proxy_set_header X-NginX-Proxy true;
+
+                proxy_pass      http://localhost:17002;
+                proxy_redirect off;
+                expires 0d;
+
+                ## Compression
+                gzip                on;
+                gzip_vary         on;
+                gzip_static        on;
+                gzip_buffers      16 8k;
+                gzip_comp_level   9;
+                gzip_http_version 1.0;
+                gzip_min_length   0;
+                gzip_types text/plain image/x-icon text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+        }
+
+        location /nde {
+                add_header Access-Control-Allow-Origin *;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header Host $http_host;
+                proxy_set_header X-NginX-Proxy true;
+
+                proxy_pass      http://localhost:18001;
+                proxy_redirect off;
+                expires 0d;
+
+                ## Compression
+                gzip                on;
+                gzip_vary         on;
+                gzip_static        on;
+                gzip_buffers      16 8k;
+                gzip_comp_level   9;
+                gzip_http_version 1.0;
+                gzip_min_length   0;
+                gzip_types text/plain image/x-icon text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+        }
+        
+	location /oauth {
+                add_header Access-Control-Allow-Origin *;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header Host $http_host;
+                proxy_set_header X-NginX-Proxy true;
+
+                proxy_pass      http://localhost:19001;
+                proxy_redirect off;
+                expires 0d;
+
+                ## Compression
+                gzip                on;
+                gzip_vary         on;
+                gzip_static        on;
+                gzip_buffers      16 8k;
+                gzip_comp_level   9;
+                gzip_http_version 1.0;
+                gzip_min_length   0;
+                gzip_types text/plain image/x-icon text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+         }
+
+         location /adb {
+                add_header Access-Control-Allow-Origin *;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header Host $http_host;
+                proxy_set_header X-NginX-Proxy true;
+
+                proxy_pass      http://localhost:20001;
+                proxy_redirect off;
+                expires 0d;
+
+                ## Compression
+                gzip                on;
+                gzip_vary         on;
+                gzip_static        on;
+                gzip_buffers      16 8k;
+                gzip_comp_level   9;
+                gzip_http_version 1.0;
+                gzip_min_length   0;
+                gzip_types text/plain image/x-icon text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+        }
+}
+
+server {
+        listen   80;
+        server_name     blueark.doralab.co.kr
+        client_max_body_size 100M;
+
+        #access_log  /data/logs/nginx/api.slpplatform/api.slpplatform.access.log;
+
+        location / {
+                add_header Access-Control-Allow-Origin *;
+                root    /data/www/blueark.doralab.co.kr;
+                index   index.html;
+                expires 15d;
+        }
+}
+
+server {
+	listen	8001;
+	server_name	admin.doralab.co.kr;
+	root /data/www/web.slpplatform/web.dla.admin;
+	index index.html index.htm;
+	location / {
+		try_files $uri $uri/ =404;
+	}
+
+	location ~ \.(php|html|htm)$ {
+		include snippets/fastcgi-php.conf;
+		fastcgi_pass unix:/var/run/php5-fpm.sock;
+	}
+
+}
+
+server {
+	listen	8002;
+	server_name	dev.admin.doralab.co.kr;
+	root /data/www/web.slpplatform/web.dla.admin.dev;
+	index index.html index.htm;
+#	location / {
+#		try_files $uri $uri/ =404;
+#	}
+
+	location ~ \.(php|html|htm|xml)$ {
+		include snippets/fastcgi-php.conf;
+		fastcgi_pass unix:/var/run/php5-fpm.sock;
+	}
+
+}
+
+server {
+        listen  8003;
+        server_name     admin.doralab.co.kr;
+        root /data/www/web.slpplatform/web.adb.admin.dev/wwwroot;
+        index index.html index.htm;
+        location / {
+                try_files $uri $uri/ =404;
+        }
+
+        location ~ \.(php|html|htm)$ {
+                include snippets/fastcgi-php.conf;
+                fastcgi_pass unix:/var/run/php5-fpm.sock;
+        }
+
+  	location /build {
+    		alias /data/www/web.slpplatform/web.adb.admin.dev/build;
+  	}
+  	location /src {
+    		alias /data/www/web.slpplatform/web.adb.admin.dev/src;
+  	}
+  	location /vendors {
+    		alias /data/www/web.slpplatform/web.adb.admin.dev/vendors;
+  	}
+
+
+
+
+}
+

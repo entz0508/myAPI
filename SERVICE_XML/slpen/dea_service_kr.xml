@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+	<!-- 
+		*2.5.0.0 :
+			   패치 파일 버젼 변경 (18 -> 19)
+			
+	  -->
+	
+	<cs_address>support-dla@blueark.com</cs_address>
+	
+	<promotion_date start="2016.03.24" end="2016.06.30" />
+	
+	<default_lang>en</default_lang>
+	
+	<promotion_products>
+		<ios>
+			<product>pass_1mon_1</product>	
+			<product>pass_1mon_2</product>			
+		</ios>
+		<android>
+			<product>pass_1mon_1</product>	
+			<product>pass_1mon_2</product>	
+		</android>
+	</promotion_products>
+	
+	<updateStoreUrl></updateStoreUrl>
+
+	<bundle_base_url>
+		<ios>http://op01-ws3869.ktics.co.kr</ios>
+		<android>http://op01-ws3869.ktics.co.kr</android>	
+
+		<ios_cdn>http://cdn.bluearkedu.com/assetBundle/iOS</ios_cdn>
+		<android_cdn>http://cdn.bluearkedu.com/assetBundle/Android</android_cdn>
+	</bundle_base_url>
+			
+	<patch_url>
+		<ios>http://cdn.bluearkedu.com/dea/patch</ios>
+		<android>http://cdn.bluearkedu.com/dea/patch</android>
+	</patch_url>
+	
+	<resources>
+		<resource>
+			<id>text_asset</id>
+			<filename>text_patch_res</filename>
+			<ver>19</ver>
+		</resource>
+	</resources>
+	
+	<web>
+		<faq>https://web.bluearkedu.com/dora/platform/web/faq.html</faq>
+		<notice>https://web.bluearkedu.com/dora/platform/web/notice.html</notice>
+		<privacy>https://web.bluearkedu.com/dora/platform/web/privacy_policy.html</privacy>
+		<term>https://web.bluearkedu.com/dora/platform/web/service_terms.html</term>
+		
+		<store>
+			<kr>
+				<ios>https://itunes.apple.com/kr/app/dolaui-yeong-eo-moheom/id1055956373?mt=8</ios>
+				<android>https://play.google.com/store/apps/details?id=com.bluearkedu.dla.english</android>
+			</kr>
+			
+			<global>
+				<ios>https://itunes.apple.com/kr/app/dolaui-yeong-eo-moheom/id1055956373?mt=8</ios>
+				<android>https://play.google.com/store/apps/details?id=com.blueark.dla.english</android>			
+			</global>
+		</store>
+	</web>
+	
+	<episode_content>
+	
+		<force_condition>
+			<ver>2.5.0</ver>
+		</force_condition>
+	
+		<service_status>
+			<level1>true</level1>
+			<level2>true</level2>
+			<level3 condition="true" >false</level3>
+			<level4 condition="true" >false</level4>		
+		</service_status>
+		
+		<free>
+			<episode>e101_w1</episode>
+			<episode>e101_w2</episode>
+		</free>
+	</episode_content>
+	
+	
+	<special_product>
+		<single_product point="10">pass_1day_episode</single_product>
+		<lifetime_product>pass_lifetime_all</lifetime_product>
+	</special_product>
+</data>

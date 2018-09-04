@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <!--
+        v1.1
+
+        [ type ]
+        0 : 정기 구독
+        1 : 기간 이용권
+        2 : 언어팩 해제
+    -->
+    <products>
+
+        <product id="subpass_1mon_lv12" type="0" os="android">
+            <title>1개월 이용권 자동결제</title>
+            <period>31</period>
+            <level>1,2,3,4</level>
+            <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+          </product>
+
+
+        <product id="subpass_1mon_all" type="0" os="android">
+            <title>1개월 이용권 자동결제</title>
+            <period>31</period>
+            <level>1,2,3,4</level>
+            <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+          </product>
+
+
+        <product id="pass_1mon_all" type="1" os="android,ios">
+            <title>1개월 이용권</title>
+            <period>31</period>
+            <level>1,2,3,4</level>
+            <point>2000</point>
+            <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>
+
+		<product id="pass_1mon_1" type="1" os="android,ios">
+            <title>Level 1 1개월 이용권</title>
+            <period>31</period>
+            <level>1</level>
+            <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>
+
+		<product id="pass_1mon_2" type="1" os="android,ios">
+            <title>Level 2 1개월 이용권</title>
+            <period>31</period>
+            <level>2</level>
+            <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>
+
+		<product id="lanpack_en" type="2" os="android">
+            <title>영어 언어 팩</title>
+            <period>31</period>
+            <level>1,2,3,4</level>
+            <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>
+
+        <product id="lanpack_period_en" type="2" os="ios">
+            <title>영어 음성/자막 1년이용권</title>
+            <period>365</period>
+            <level>1,2,3,4</level>
+            <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>        
+
+		<product id="lanpack_kr" type="2" os="android,ios">
+            <title>한글 언어 팩</title>
+            <period>31</period>
+            <level>1,3,3,4</level>
+            <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>
+
+		<product id="lanpack_kr" type="2" os="android,ios">
+            <title>한자 언어 팩</title>
+            <period>31</period>
+            <level>1,3,3,4</level>
+            <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>
+        
+		<product id="pass_lifetime_all" type="1" os="android,ios">
+            <title>평생 이용권</title>
+            <period>10000</period>
+            <level>1,2,3,4</level>
+            <point>10000</point>
+            <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>  
+        
+		<product id="pass_1year_all" type="1" os="android,ios">
+            <title>1년 이용권</title>
+            <period>365</period>
+            <level>1,2,3,4</level>
+			<point>5000</point>
+            <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>
+        
+		<product id="pass_1day_all2" type="1" os="android,ios">
+            <title>1일 이용권</title>
+            <period>1</period>
+            <level>1,2,3,4</level>
+			<point>500</point>
+            <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>        
+        
+		<product id="pass_1day_episode" type="1" os="android,ios">
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <level>1,2,3,4</level>
+			<point>10</point> 
+            <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>                                                        
+    </products>
+
+    <shop_data>
+        <shop os="ios">
+            <product service_enable="true" type="1">
+                <product_id>pass_1mon_all</product_id>
+                <shop_grade><![CDATA[Level 1 & 2]]></shop_grade>
+                <shop_minititle>1개월 전체 이용권</shop_minititle>
+                <shop_fulltitle><![CDATA[Level 1 & 2 이용권- 1개월]]></shop_fulltitle>
+                <shop_sale>35%</shop_sale>
+                <shop_price_krw>USD 29.99</shop_price_krw>
+                <shop_saleprice_krw>USD 19.99</shop_saleprice_krw>
+                <shop_price_usd>USD 29.99</shop_price_usd>
+                <shop_saleprice_usd>USD 19.99</shop_saleprice_usd>
+            </product>
+
+            <product service_enable="true" type="1">
+                <product_id>pass_1mon_1</product_id>
+                <shop_grade>Level 1</shop_grade>
+                <shop_minititle>1개월 이용권</shop_minititle>
+                <shop_fulltitle>Level 1 이용권- 1개월</shop_fulltitle>
+                <shop_sale>35%</shop_sale>
+                <shop_price_krw>USD 29.99</shop_price_krw>
+                <shop_saleprice_krw>USD 19.99</shop_saleprice_krw>
+                <shop_price_usd>USD 29.99</shop_price_usd>
+                <shop_saleprice_usd>USD 19.99</shop_saleprice_usd>
+            </product>
+
+            <product service_enable="true" type="1">
+                <product_id>pass_1mon_2</product_id>
+                <shop_grade>Level 2</shop_grade>
+                <shop_minititle>1개월 이용권</shop_minititle>
+                <shop_fulltitle>Level 2 이용권- 1개월</shop_fulltitle>
+                <shop_sale>35%</shop_sale>
+                <shop_price_krw>USD 29.99</shop_price_krw>
+                <shop_saleprice_krw>USD 19.99</shop_saleprice_krw>
+                <shop_price_usd>USD 29.99</shop_price_usd>
+                <shop_saleprice_usd>USD 19.99</shop_saleprice_usd>
+            </product>
+
+            <product service_enable="false" type="1">
+                <product_id>pass_1mon_3</product_id>
+                <shop_grade>Level 3</shop_grade>
+                <shop_minititle>1개월 이용권</shop_minititle>
+                <shop_fulltitle>Level 3 이용권- 1개월</shop_fulltitle>
+                <shop_sale>35%</shop_sale>
+                <shop_price_krw>USD 29.99</shop_price_krw>
+                <shop_saleprice_krw>USD 19.99</shop_saleprice_krw>
+                <shop_price_usd>USD 29.99</shop_price_usd>
+                <shop_saleprice_usd>USD 19.99</shop_saleprice_usd>
+            </product>
+
+            <product service_enable="false" type="1">
+                <product_id>pass_1mon_4</product_id>
+                <shop_grade>Level 4</shop_grade>
+                <shop_minititle>1개월 이용권</shop_minititle>
+                <shop_fulltitle>Level 4 이용권- 1개월</shop_fulltitle>
+                <shop_sale>35%</shop_sale>
+                <shop_price_krw>USD 29.99</shop_price_krw>
+                <shop_saleprice_krw>USD 19.99</shop_saleprice_krw>
+                <shop_price_usd>USD 29.99</shop_price_usd>
+                <shop_saleprice_usd>USD 19.99</shop_saleprice_usd>
+            </product>
+
+        </shop>
+        
+  <shop os="android">
+
+            <product service_enable="true" type="0">
+                <product_id>subpass_1mon_lv12</product_id>
+                <shop_grade><![CDATA[Level 1 & 2]]></shop_grade>
+                <shop_minititle>1개월 월간 결제 이용권</shop_minititle>
+                <shop_fulltitle><![CDATA[[월 구독] Level 1&2 이용권- 1개월]]></shop_fulltitle>
+                <shop_sale>75%</shop_sale>
+                <shop_price_krw>19900원</shop_price_krw>
+                <shop_saleprice_krw>6900원</shop_saleprice_krw>
+                <shop_price_usd>19900Won</shop_price_usd>
+                <shop_saleprice_usd>6900Won</shop_saleprice_usd>
+            </product>
+
+            <product service_enable="true" type="1">
+                <product_id>pass_1mon_1</product_id>
+                <shop_grade>Level 1</shop_grade>
+                <shop_minititle>1개월 이용권</shop_minititle>
+                <shop_fulltitle>Level 1 이용권- 1개월</shop_fulltitle>
+                <shop_sale>35%</shop_sale>
+                <shop_price_krw>29900원</shop_price_krw>
+                <shop_saleprice_krw>19900원</shop_saleprice_krw>
+                <shop_price_usd>29900Won</shop_price_usd>
+                <shop_saleprice_usd>19900Won</shop_saleprice_usd>
+            </product>
+
+            <product service_enable="true" type="1">
+                <product_id>pass_1mon_2</product_id>
+                <shop_grade>Level 2</shop_grade>
+                <shop_minititle>1개월 이용권</shop_minititle>
+                <shop_fulltitle>Level 2 이용권- 1개월</shop_fulltitle>
+                <shop_sale>35%</shop_sale>
+                <shop_price_krw>29900원</shop_price_krw>
+                <shop_saleprice_krw>19900원</shop_saleprice_krw>
+                <shop_price_usd>29900Won</shop_price_usd>
+                <shop_saleprice_usd>19900Won</shop_saleprice_usd>
+            </product>
+
+            <product service_enable="false" type="1">
+                <product_id>pass_1mon_3</product_id>
+                <shop_grade>Level 3</shop_grade>
+                <shop_minititle>1개월 이용권</shop_minititle>
+                <shop_fulltitle>Level 3 이용권- 1개월</shop_fulltitle>
+                <shop_sale>35%</shop_sale>
+                <shop_price_krw>29900원</shop_price_krw>
+                <shop_saleprice_krw>19900원</shop_saleprice_krw>
+                <shop_price_usd>29900Won</shop_price_usd>
+                <shop_saleprice_usd>19900Won</shop_saleprice_usd>
+            </product>
+
+            <product service_enable="false" type="1">
+                <product_id>pass_1mon_4</product_id>
+                <shop_grade>Level 4</shop_grade>
+                <shop_minititle>1개월 이용권</shop_minititle>
+                <shop_fulltitle>Level 4 이용권- 1개월</shop_fulltitle>
+                <shop_sale>35%</shop_sale>
+                <shop_price_krw>29900원</shop_price_krw>
+                <shop_saleprice_krw>19900원</shop_saleprice_krw>
+                <shop_price_usd>29900Won</shop_price_usd>
+                <shop_saleprice_usd>19900Won</shop_saleprice_usd>
+            </product>
+
+        </shop>     
+        
+        <shop os="ios" ver="2.2.0">
+            <product service_enable="true" type="0">
+                <product_id>pass_lifetime_all</product_id>
+                <shop_grade><![CDATA[]]></shop_grade>
+                <shop_minititle>평생</shop_minititle>
+                <shop_fulltitle>평생</shop_fulltitle>
+                <shop_sale>50%</shop_sale>
+                <shop_price_krw>$99.99</shop_price_krw>
+                <shop_saleprice_krw>$49.99</shop_saleprice_krw>
+                <shop_price_usd>$99.99</shop_price_usd>
+                <shop_saleprice_usd>$49.99</shop_saleprice_usd>
+            </product>
+
+            <product service_enable="true" type="0">
+                <product_id>pass_1year_all</product_id>
+                <shop_grade><![CDATA[]]></shop_grade>
+                <shop_minititle>1년</shop_minititle>
+                <shop_fulltitle>1년</shop_fulltitle>
+                <shop_sale>40%</shop_sale>
+                <shop_price_krw>$49.99</shop_price_krw>
+                <shop_saleprice_krw>$29.99</shop_saleprice_krw>
+                <shop_price_usd>$49.99</shop_price_usd>
+                <shop_saleprice_usd>$29.99</shop_saleprice_usd>
+            </product>
+            
+            <product service_enable="true" type="0">
+                <product_id>pass_1mon_all</product_id>
+                <shop_grade><![CDATA[]]></shop_grade>19
+                <shop_minititle>1개월</shop_minititle>
+                <shop_fulltitle>1개월</shop_fulltitle>
+                <shop_sale></shop_sale>
+                <shop_price_krw>$19.99</shop_price_krw>
+                <shop_saleprice_krw>$19.99</shop_saleprice_krw>
+                <shop_price_usd>$19.99</shop_price_usd>
+                <shop_saleprice_usd>$19.99</shop_saleprice_usd>
+            </product>  
+            
+            <product service_enable="true" type="0">
+                <product_id>pass_1day_all2</product_id>
+                <shop_grade><![CDATA[]]></shop_grade>
+                <shop_minititle>1일</shop_minititle>
+                <shop_fulltitle>1일</shop_fulltitle>
+                <shop_sale></shop_sale>
+                <shop_price_krw>$1.99</shop_price_krw>
+                <shop_saleprice_krw>$1.99</shop_saleprice_krw>
+                <shop_price_usd>$1.99</shop_price_usd>
+                <shop_saleprice_usd>$1.99</shop_saleprice_usd>
+            </product>            
+        </shop>                
+		
+        <shop os="android" ver="2.2.0">
+            <product service_enable="true" type="0">
+                <product_id>pass_lifetime_all</product_id>
+                <shop_grade><![CDATA[]]></shop_grade>
+                <shop_minititle>평생</shop_minititle>
+                <shop_fulltitle>평생</shop_fulltitle>
+                <shop_sale>50%</shop_sale>
+                <shop_price_krw>$99.99</shop_price_krw>
+                <shop_saleprice_krw>$49.99</shop_saleprice_krw>
+                <shop_price_usd>$99.99</shop_price_usd>
+                <shop_saleprice_usd>$49.99</shop_saleprice_usd>
+            </product>
+
+            <product service_enable="true" type="0">
+                <product_id>pass_1year_all</product_id>
+                <shop_grade><![CDATA[]]></shop_grade>
+                <shop_minititle>1년</shop_minititle>
+                <shop_fulltitle>1년</shop_fulltitle>
+                <shop_sale>40%</shop_sale>
+                <shop_price_krw>$49.99</shop_price_krw>
+                <shop_saleprice_krw>$29.99</shop_saleprice_krw>
+                <shop_price_usd>$49.99</shop_price_usd>
+                <shop_saleprice_usd>$29.99</shop_saleprice_usd>
+            </product>
+            
+            <product service_enable="true" type="0">
+                <product_id>pass_1mon_all</product_id>
+                <shop_grade><![CDATA[]]></shop_grade>
+                <shop_minititle>1개월</shop_minititle>
+                <shop_fulltitle>1개월</shop_fulltitle>
+                <shop_sale></shop_sale>
+                <shop_price_krw>$19.99</shop_price_krw>
+                <shop_saleprice_krw>$19.99</shop_saleprice_krw>
+                <shop_price_usd>$19.99</shop_price_usd>
+                <shop_saleprice_usd>$19.99</shop_saleprice_usd>
+            </product>  
+            
+            <product service_enable="true" type="0">
+                <product_id>pass_1day_all2</product_id>
+                <shop_grade><![CDATA[]]></shop_grade>
+                <shop_minititle>1일</shop_minititle>
+                <shop_fulltitle>1일</shop_fulltitle>
+                <shop_sale></shop_sale>
+                <shop_price_krw>$1.99</shop_price_krw>
+                <shop_saleprice_krw>$1.99</shop_saleprice_krw>
+                <shop_price_usd>$1.99</shop_price_usd>
+                <shop_saleprice_usd>$1.99</shop_saleprice_usd>
+            </product>             
+        </shop>    
+        
+    </shop_data>
+
+</root>

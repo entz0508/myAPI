@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<quests>
+		<quest>
+			<seq>10</seq>
+			<quest_id>m_join</quest_id>
+			<class>account</class>
+			<duplicate_unit>once</duplicate_unit>
+			<point>0</point>
+			<desc>회원가입</desc>
+			<use>false</use>
+		</quest>
+		<quest>
+			<seq>20</seq>
+			<quest_id>m_profile_1st</quest_id>
+			<class>account</class>
+			<duplicate_unit>once</duplicate_unit>
+			<point>5</point>
+			<desc>아이 프로필 정보 등록</desc>
+			<use>true</use>
+		</quest>
+		<quest>
+			<seq>30</seq>
+			<quest_id>m_rpt_card</quest_id>
+			<class>account</class>
+			<duplicate_unit>day</duplicate_unit>
+			<point>1</point>
+			<desc>학습 카드 확인</desc>
+			<use>true</use>
+		</quest>
+		<quest>
+			<seq>40</seq>
+			<quest_id>m_rpt_report</quest_id>
+			<class>account</class>
+			<duplicate_unit>day</duplicate_unit>
+			<point>1</point>
+			<desc>리포트 카드 확인</desc>
+			<use>true</use>
+		</quest>
+		<quest>
+			<seq>50</seq>
+			<quest_id>m_rpt_stat</quest_id>
+			<class>account</class>
+			<duplicate_unit>day</duplicate_unit>
+			<point>1</point>
+			<desc>이용 통계 확인</desc>
+			<use>true</use>
+		</quest>
+		<quest>
+			<seq>60</seq>
+			<quest_id>m_play_ep_total5</quest_id>
+			<class>account</class>
+			<duplicate_unit>day</duplicate_unit>
+			<point>5</point>
+			<desc>총 5편 플레이 기록 달성</desc>
+			<use>true</use>
+		</quest>
+		<quest>
+			<seq>70</seq>
+			<quest_id>m_buy_month_1st</quest_id>
+			<class>account</class>
+			<duplicate_unit>once</duplicate_unit>
+			<point>50</point>
+			<desc>1개월 이용권 첫 구매</desc>
+			<use>true</use>
+		</quest>
+		<quest>
+			<seq>80</seq>
+			<quest_id>m_buy_month_again</quest_id>
+			<class>account</class>
+			<duplicate_unit>once</duplicate_unit>
+			<point>50</point>
+			<desc>1개월 이용권 재 구매</desc>
+			<use>true</use>
+		</quest>
+		<quest>
+			<seq>90</seq>
+			<quest_id>m_store_review</quest_id>
+			<class>account</class>
+			<duplicate_unit>once</duplicate_unit>
+			<point>5</point>
+			<desc>스토어 리뷰 작성</desc>
+			<use>true</use>
+		</quest>
+		<quest>
+			<seq>100</seq>
+			<quest_id>m_sns_fb_like</quest_id>
+			<class>account</class>
+			<duplicate_unit>once</duplicate_unit>
+			<point>5</point>
+			<desc>Facebook 좋아요</desc>
+			<use>true</use>
+		</quest>
+		<quest>
+			<seq>110</seq>
+			<quest_id>m_sns_insta_like</quest_id>
+			<class>account</class>
+			<duplicate_unit>once</duplicate_unit>
+			<point>5</point>
+			<desc>Instagram Follow</desc>
+			<use>true</use>
+		</quest>
+		<quest>
+			<seq>1001</seq>
+			<quest_id>visit_day1</quest_id>
+			<class>account</class>
+			<duplicate_unit>checkin</duplicate_unit>
+			<point>0</point>
+			<desc>최초 출석 1일차</desc>
+			<use>true</use>
+		</quest>
+		<quest>
+			<seq>1002</seq>
+			<quest_id>visit_day2</quest_id>
+			<class>account</class>
+			<duplicate_unit>checkin</duplicate_unit>
+			<point>0</point>
+			<desc>연속 출석 2일차</desc>
+			<use>true</use>
+		</quest>
+		<quest>
+			<seq>1003</seq>
+			<quest_id>visit_day3</quest_id>
+			<class>account</class>
+			<duplicate_unit>checkin</duplicate_unit>
+			<point>0</point>
+			<desc>연속 출석 3일차</desc>
+			<use>true</use>
+		</quest>
+		<quest>
+			<seq>1004</seq>
+			<quest_id>visit_day4</quest_id>
+			<class>account</class>
+			<duplicate_unit>checkin</duplicate_unit>
+			<point>0</point>
+			<desc>연속 출석 4일차</desc>
+			<use>true</use>
+		</quest>
+		<quest>
+			<seq>1005</seq>
+			<quest_id>visit_day5</quest_id>
+			<class>account</class>
+			<duplicate_unit>checkin</duplicate_unit>
+			<point>0</point>
+			<desc>연속 출석 5일차</desc>
+			<use>true</use>
+		</quest>
+		<quest>
+			<seq>1006</seq>
+			<quest_id>visit_day6</quest_id>
+			<class>account</class>
+			<duplicate_unit>checkin</duplicate_unit>
+			<point>0</point>
+			<desc>연속 출석 6일차</desc>
+			<use>true</use>
+		</quest>
+		<quest>
+			<seq>1007</seq>
+			<quest_id>visit_day7</quest_id>
+			<class>account</class>
+			<duplicate_unit>checkin</duplicate_unit>
+			<point>0</point>
+			<desc>연속 출석 7일차</desc>
+			<use>true</use>
+		</quest>
+	</quests>
+</root>

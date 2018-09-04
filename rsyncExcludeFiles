@@ -1,0 +1,7 @@
+api.slpdla/config/config.json
+api.slpen/config/config.json
+api.slpkidswatts/config/config.json
+api.slpplatform/config/config.json
+api.slpplatform/ssh/rsa-key-slp-dla-photo-upload-real.openssh
+rsyncExcludeFiles 
+

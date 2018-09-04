@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<packages>
+	<!-- package_id:패키지 고유 아이디 1: google,2:apple,3:hami -->
+	<!-- store:inapp 상점 구분, google,apple,hami-->
+	<!-- product_id:인앱등록 아이디-->
+	<!-- level:학습레벨 -->
+	<!-- state: 0:표시안함/구매불가, 1:표시함/구매가능, 2:표시함/구매불가 -->
+	<package package_id="10000" store="google" product_id="google.inapp.10000" level="1" state="1" >
+		<title>test google inapp</title>  	<!-- 패키지 이름 -->
+		<price>0.99</price>					<!-- 가격 -->
+		<currency>NT$</currency>    		<!-- 화폐단위 -->
+		<ticket_type>4</ticket_type>		<!-- 구매시 티켓 타입-->
+		<qty>10</qty>						<!-- 구매시 티켓 획득 수량 -->
+	</package>
+	<package package_id="10001" store="google" product_id="google.inapp.10001" level="1" state="1" >
+		<title>test google inapp</title>  	<!-- 패키지 이름 -->
+		<price>1.99</price>					<!-- 가격 -->
+		<currency>NT$</currency>    		<!-- 화폐단위 -->
+		<ticket_type>4</ticket_type>		<!-- 구매시 티켓 타입-->
+		<qty>50</qty>						<!-- 구매시 티켓 획득 수량 -->
+	</package>
+
+	<package package_id="20000" store="apple" product_id="apple.inapp.20000" level="1" state="1" >
+		<title>test apple inapp</title>  	<!-- 패키지 이름 -->
+		<price>0.99</price>				<!-- 가격 -->
+		<currency>NT$</currency>    	<!-- 화폐단위 -->
+		<ticket_type>4</ticket_type>	<!-- 구매시 티켓 타입-->
+		<qty>10</qty>					<!-- 구매시 티켓 획득 수량 -->
+	</package>
+	<package package_id="20001" store="apple" product_id="apple.inapp.20001" level="1" state="1" >
+		<title>test apple inapp</title>  	<!-- 패키지 이름 -->
+		<price>1.99</price>				<!-- 가격 -->
+		<currency>NT$</currency>    	<!-- 화폐단위 -->
+		<ticket_type>4</ticket_type>	<!-- 구매시 티켓 타입-->
+		<qty>50</qty>					<!-- 구매시 티켓 획득 수량 -->
+	</package>
+</packages>

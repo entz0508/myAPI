@@ -1,0 +1,64 @@
+{
+    "CONFIG":
+    {
+        "PACKAGE_NAME":"com.blueark.slp.kw"
+    },
+    "SERVER_INFO" :
+    {
+        "SERVER_ID":1,
+        "NAME":"SLP Kidswatts",
+        "PORT":17002,
+        "APP_ID":[1000000000],
+        "GOOGLEPLAY_PUBLIC_KEY":"",
+        "SHOP_APPLE_VERIFY_RECEIPT_URL_LIVE":"buy.itunes.apple.com",
+        "SHOP_APPLE_VERIFY_RECEIPT_URL_SANDBOX":"sandbox.itunes.apple.com",
+        "PHOTO" : {
+            "LOCAL_TEMP_PATH":"/data/temp_photo/",
+            "IMG_SERVER_REAL":{"HOST":"14.63.169.217"},
+            "IMG_SERVER":{  "HOST":"172.27.233.24",
+                            "PORT":22,
+                            "USERNAME":"slpphoto",
+			    "PRIVATE_KEY":"./ssh/rsa-key-slp-dla-photo-upload-dev.openssh",
+                            "PHOTO_PATH":"/data/www/images/kw/profile/"}
+        }
+    },
+    "LOG_INFO" :
+    {
+        "LOGGER_LEVEL" : "DEBUG",
+        "FILE_PATH" : "/data/logs/node/slp_kidswatts/slp_kidswatts.log",
+        "CATEGORY" : "SLP_DLA"
+    },
+    "SLP_PLATFORM" : {
+        "URL":"127.0.0.1",
+        "PORT":15001,
+        "PATH_IS_AUTH_SLP_ACCOUNT_WITH_PROFILE":"slp/user/account/isloggedin/withprofile",
+        "PATH_IS_AUTH_SLP_ACCOUNT_WITHOUT_PROFILE":"slp/user/account/isloggedin/withoutprofile"
+    },
+    "MYSQL_SLP_KW_INFO" : {
+      "HOST": "localhost",
+      "PORT": 16612,
+      "USER": "splkwdev",
+      "PASSWORD": "qmffndkzm!!!!",
+      "DATABASE": "slp_kw_info_db",
+      "CONNECTION_LIMIT":5
+    },
+    "MYSQL_SLP_KW" : {
+        "HOST": "localhost",
+        "PORT": 16612,
+        "USER": "splkwdev",
+        "PASSWORD": "qmffndkzm!!!!",
+        "DATABASE": "slp_kw_db",
+        "CONNECTION_LIMIT":5
+    },
+    "MYSQL_SLP_KW_ACTION_LOG" : {
+        "HOST": "localhost",
+        "PORT": 16612,
+        "USER": "splkwapidev",
+        "PASSWORD": "qmffndkzm!!!!",
+        "DATABASE": "slp_kw_action_log_db",
+        "CONNECTION_LIMIT":5
+    },
+    "end" : {
+    }
+
+}

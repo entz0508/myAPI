@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <sequence level_id="1">
+        <category id="c001">
+            <episodes>
+                <episode>ep019</episode>
+                <episode>ep033</episode>
+                <episode>ep031</episode>
+            </episodes>
+        </category>
+       		
+		<category id="c002">
+            <episodes>
+                <episode>ep001</episode>
+                <episode>ep005</episode>
+                <episode>ep011</episode>
+                <episode>ep032</episode>
+            </episodes>
+        </category>
+    
+		<category id="c003">
+            <episodes>
+                <episode>ep007</episode>
+                <episode>ep014</episode>
+                <episode>ep020</episode>
+                <episode>ep028</episode>
+            </episodes>
+        </category>
+    
+		<category id="c004">
+            <episodes>
+                <episode>ep006</episode>
+                <episode>ep017</episode>
+                <episode>ep024</episode>
+            </episodes>
+        </category>
+    
+		<category id="c005">
+            <episodes>
+                <episode>ep003</episode>
+                <episode>ep004</episode>
+                <episode>ep009</episode>
+                <episode>ep016</episode>
+            </episodes>
+        </category>
+    
+		<category id="c006">
+            <episodes>
+                <episode>ep023</episode>
+                <episode>ep026</episode>
+                <episode>ep027</episode>
+            </episodes>
+        </category>
+
+		<category id="c007">
+            <episodes>
+                <episode>ep022</episode>
+                <episode>ep029</episode>
+                <episode>ep039</episode>
+            </episodes>
+        </category>
+
+		<category id="c008">
+            <episodes>
+                <episode>ep010</episode>
+                <episode>ep015</episode>
+                <episode>ep034</episode>
+                <episode>ep040</episode>
+            </episodes>
+        </category>
+
+		<category id="c009">
+            <episodes>
+                <episode>ep002</episode>
+                <episode>ep013</episode>
+                <episode>ep035</episode>
+            </episodes>
+        </category>
+
+		<category id="c010">
+            <episodes>
+                <episode>ep025</episode>
+                <episode>ep030</episode>
+                <episode>ep036</episode>
+                <episode>ep038</episode>
+            </episodes>
+        </category>
+
+		<category id="c011">
+            <episodes>
+                <episode>ep008</episode>
+                <episode>ep012</episode>
+                <episode>ep018</episode>
+                <episode>ep021</episode>
+            </episodes>
+        </category>
+
+		<category id="c012">
+            <episodes>
+                <episode>ep037</episode>
+                <episode>ep041</episode>
+            </episodes>
+        </category>
+    </sequence>
+</root>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+	<!-- v1.13.0
+			
+	  -->
+	
+	<cs_address>support-dla@blueark.com</cs_address>
+	
+	<promotion_date start="2016.03.24" end="2016.06.30" />
+	
+	<default_lang>kr</default_lang>
+	
+	<promotion_products>
+		<ios>
+			<product>pass_1mon_1</product>	
+			<product>pass_1mon_2</product>			
+		</ios>
+		<android>
+			<product>pass_1mon_1</product>	
+			<product>pass_1mon_2</product>	
+		</android>
+	</promotion_products>
+	
+	<updateStoreUrl></updateStoreUrl>
+
+	<bundle_base_url>
+		<ios>http://op01-ws3869.ktics.co.kr</ios>
+		<android>http://op01-ws3869.ktics.co.kr</android>	
+
+		<ios_cdn>http://cdn.bluearkedu.com/assetBundle/iOS</ios_cdn>
+		<android_cdn>http://cdn.bluearkedu.com/assetBundle/Android</android_cdn>
+	</bundle_base_url>
+			
+	<patch_url>
+		<ios>http://cdn.bluearkedu.com/dea/patch</ios>
+		<android>http://cdn.bluearkedu.com/dea/patch</android>
+	</patch_url>
+	
+	<resources>
+		<resource>
+			<id>text_asset</id>
+			<filename>text_patch_res</filename>
+			<ver>8</ver>
+		</resource>
+	</resources>
+	
+	<web>
+		<faq>https://download.blueark.com/dla/dea_web/web/faq.html</faq>
+		<notice>https://download.blueark.com/dla/dea_web/web/notice.html</notice>
+		<privacy>https://download.blueark.com/dla/dea_web/web/privacy_policy.html</privacy>
+		<term>https://download.blueark.com/dla/dea_web/web/service_terms.html</term>
+	</web>
+	
+</data>

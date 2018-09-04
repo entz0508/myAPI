@@ -1,0 +1,1082 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!-- *********************** 상품정보 XML 설명 *************************** 
+*** 상품구매, QUEST (mission) 에서 이용하는 구매단위의 XML 입니다. 
+*** 상품을 구매하거나 퀘스트에서 보상을 줄 경우 반드시 이 파일에 product 로 명시되어야 동작합니다. 
+*** 상품구매 혹은 QUEST 를 통해 카테고리 혹은 에피소드 단위로 권한을 주는 목록이라 생각하시면 됩니다.
+*** POINT 를 0으로 하였을 때 무료로 제공하는 것과 같은 효과를 같습니다. 
+*** 본 XML 파일의 목적은 POST WEB 방식의 API 에서 가격 및 상품을 믿을 수 있는 서버에 저장하여 빼내어 쓰기 위함입니다. 
+*** 상품정보 XML 은 각 DLA 레벨 별로 동작합니다. 따라서 같은 상품 같은 내용이라 하더라도 각 파일에 각각 지정되어야 합니다. 
+*********************** XML 노드 설명 *************************** 
+*** period 는 제공하고 싶은 기간을 날짜 단위로 지정합니다. ex) 1년 = 365 
+*** using_unit 은 제공하는 것을 카테고리단위로 할 것인지 에피소드 단위로 할 것인지를 결정합니다. 
+*** category_id, 혹은 episode_id 는 1개 이상의 제공권한을 (,) COMMA 로 구분하여 공백없이 나열합니다. 
+*** point 는 포인트 구매 시 차감할 STAR_POINT 값입니다. 0일 경우 무료제공 - 이를 이용하여 QUEST 혹은 이벤트를 생성 할 수 있습니다.
+*** use 는 현재 서비스에서 해당 상품의 사용 유무 값입니다. true, false
+*** product type="store(해당 OS 스토어), platform(서버용)" = 기획자를 위한 타입 구분입니다. (해당 상품이 사용되는 플랫폼), 개발자는 사용하지 않습니다.
+-->
+    <products>
+		<product type="store, platform">
+			<app_id>1000000004</app_id>
+            <period_type>lifetime</period_type>
+			<id>s2_lifetime_all</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>평생 이용권</title>
+            <period>10000</period>
+            <using_unit>category_id</using_unit>
+			<category_id>c101,c102,c103,c104,c105,c106,c107,c108,c109,c110,c111,c112,c113</category_id>
+			<episode_id>null</episode_id>
+            <point>10000</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>
+
+
+        <product type="store, platform">
+			<app_id>1000000004</app_id>
+            <period_type>1year</period_type>
+			<id>s2_1year_all</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>1년 이용권</title>
+            <period>365</period>
+            <using_unit>category_id</using_unit>
+			<category_id>c101,c102,c103,c104,c105,c106,c107,c108,c109,c110,c111,c112,c113</category_id>
+			<episode_id>null</episode_id>
+            <point>5000</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>
+
+
+		<product type="store, platform">
+			<app_id>1000000004</app_id>
+            <period_type>1month</period_type>
+			<id>s2_1mon_all</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>1개월 이용권</title>
+            <period>31</period>
+            <using_unit>category_id</using_unit>
+			<category_id>c101,c102,c103,c104,c105,c106,c107,c108,c109,c110,c111,c112,c113</category_id>
+			<episode_id>null</episode_id>
+            <point>2000</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>
+
+
+		<product type="store, platform">
+			<app_id>1000000004</app_id>
+            <period_type>7day</period_type>
+			<id>s2_7day_all</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>일주일 이용권</title>
+            <period>7</period>
+            <using_unit>category_id</using_unit>
+			<category_id>c101,c102,c103,c104,c105,c106,c107,c108,c109,c110,c111,c112,c113</category_id>
+			<episode_id>null</episode_id>
+            <point>500</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>
+
+
+        <product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep101</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep101</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>  
+		
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep102</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep102</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>
+		
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep103</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep103</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>
+		
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep104</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep104</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>  
+		
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep105</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep105</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep106</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep106</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep107</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep107</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep108</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep108</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep109</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep109</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep110</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep110</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep111</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep111</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep112</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep112</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product> 
+		
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep113</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep113</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep114</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep114</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep115</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep115</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep116</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep116</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep117</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep117</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>  
+		
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep118</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep118</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep119</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep119</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep120</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep120</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep121</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep121</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>
+		
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep122</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep122</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep123</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep123</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product> 
+		
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep124</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep124</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep125</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep125</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>  
+		
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep126</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep126</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep127</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep127</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep128</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep128</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep129</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep129</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep130</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep130</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep131</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep131</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep132</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep132</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep133</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep133</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep134</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep134</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep135</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep135</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep136</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep136</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep137</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep137</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep138</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep138</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep139</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep139</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep140</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep140</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>  
+		
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep141</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep141</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_ep142</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>ep142</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>
+		
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_eps106</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>eps106</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>   
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_eps104</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>eps104</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>  
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_eps109</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>eps109</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>  
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_eps105</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>eps105</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>  
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_eps108</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>eps108</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>  
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_eps101</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>eps101</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>  
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_eps102</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>eps102</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>  
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_eps103</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>eps103</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>  
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_eps107</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>eps107</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>  
+
+
+		<product type="platform">
+			<app_id>1000000004</app_id>
+            <period_type>episode_1day</period_type>
+			<id>pass_1day_episode_eps111</id>
+			<use>true</use>
+			<os>android,ios</os>
+            <title>에피소드 1일 이용권</title>
+            <period>1</period>
+            <using_unit>episode_id</using_unit>
+			<category_id>null</category_id>
+			<episode_id>eps111</episode_id>
+            <point>10</point>
+             <event_date>
+                <start>null</start>
+                <end>null</end>
+            </event_date>
+        </product>
+    </products>
+</root>

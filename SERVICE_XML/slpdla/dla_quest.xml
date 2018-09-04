@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<quest>
+		<quest_id>m_join</quest_id>
+		<desc>회원가입</desc>
+		<class>account</class>
+		<duplicate_unit>once</duplicate_unit>
+		<point>0</point>
+		<app_id>1000000003,1000000004,1000000005</app_id>
+		<use>false</use>
+	</quest>
+	<quest>
+		<quest_id>m_profile_1st</quest_id>
+		<desc>프로필 등록</desc>
+		<class>account</class>
+		<duplicate_unit>once</duplicate_unit>
+		<point>5</point>
+		<app_id>1000000003,1000000004,1000000005</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_dla_lv1_down</quest_id>
+		<desc>DLA1 다운로드</desc>
+		<class>account</class>
+		<duplicate_unit>once</duplicate_unit>
+		<point>10</point>
+		<app_id>1000000004,1000000005</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_dla_lv2_down</quest_id>
+		<desc>DLA2 다운로드</desc>
+		<class>account</class>
+		<duplicate_unit>once</duplicate_unit>
+		<point>10</point>
+		<app_id>1000000003,1000000005</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_dla_lv3_down</quest_id>
+		<desc>DLA3 다운로드</desc>
+		<class>account</class>
+		<duplicate_unit>once</duplicate_unit>
+		<point>10</point>
+		<app_id>1000000003,1000000004</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_dea_install</quest_id>
+		<desc>DEA 다운로드</desc>
+		<class>account</class>
+		<duplicate_unit>once</duplicate_unit>
+		<point>10</point>
+		<app_id>1000000003,1000000004,1000000005</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_sns_fb_like</quest_id>
+		<desc>Facebook 좋아요</desc>
+		<class>account</class>
+		<duplicate_unit>once</duplicate_unit>
+		<point>5</point>
+		<app_id>1000000003,1000000004,1000000005</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_store_lv1_review</quest_id>
+		<desc>DLA1 스토어 리뷰</desc>
+		<class>account</class>
+		<duplicate_unit>once</duplicate_unit>
+		<point>5</point>
+		<app_id>1000000003</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_store_lv2_review</quest_id>
+		<desc>DLA2 스토어 리뷰</desc>
+		<class>account</class>
+		<duplicate_unit>once</duplicate_unit>
+		<point>5</point>
+		<app_id>1000000004</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_store_lv3_review</quest_id>
+		<desc>DLA3 스토어 리뷰</desc>
+		<class>account</class>
+		<duplicate_unit>once</duplicate_unit>
+		<point>5</point>
+		<app_id>1000000005</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_rpt_overview_dla1</quest_id>
+		<desc>리포트 요약 DLA1</desc>
+		<class>account</class>
+		<duplicate_unit>day</duplicate_unit>
+		<point>1</point>
+		<app_id>1000000003</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_rpt_category_dla1</quest_id>
+		<desc>주제 리포트 DLA1</desc>
+		<class>account</class>
+		<duplicate_unit>day</duplicate_unit>
+		<point>1</point>
+		<app_id>1000000003</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_rpt_intell_dla1</quest_id>
+		<desc>지능 리포트 DLA1</desc>
+		<class>account</class>
+		<duplicate_unit>day</duplicate_unit>
+		<point>1</point>
+		<app_id>1000000003</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_rpt_review_dla1</quest_id>
+		<desc>복습 카드 DLA1</desc>
+		<class>account</class>
+		<duplicate_unit>day</duplicate_unit>
+		<point>1</point>
+		<app_id>1000000003</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_rpt_ranking_dla1</quest_id>
+		<desc>랭킹/태그 DLA1</desc>
+		<class>account</class>
+		<duplicate_unit>day</duplicate_unit>
+		<point>1</point>
+		<app_id>1000000003</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_rpt_stat_dla1</quest_id>
+		<desc>이용 통계 DLA1 </desc>
+		<class>account</class>
+		<duplicate_unit>day</duplicate_unit>
+		<point>1</point>
+		<app_id>1000000003</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_play_ep_total5_dla1</quest_id>
+		<desc>5회 플레이 DLA1</desc>
+		<class>account</class>
+		<duplicate_unit>day</duplicate_unit>
+		<point>5</point>
+		<app_id>1000000003</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_buy_month_1st_dla1</quest_id>
+		<desc>1개월 첫 구매 DLA1</desc>
+		<class>account</class>
+		<duplicate_unit>once</duplicate_unit>
+		<point>50</point>
+		<app_id>1000000003</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_buy_month_again_dla1</quest_id>
+		<desc>1개월 재구매 DLA1</desc>
+		<class>account</class>
+		<duplicate_unit>once</duplicate_unit>
+		<point>50</point>
+		<app_id>1000000003</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_rpt_overview_dla2</quest_id>
+		<desc>리포트 요약 DLA2</desc>
+		<class>account</class>
+		<duplicate_unit>day</duplicate_unit>
+		<point>1</point>
+		<app_id>1000000004</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_rpt_category_dla2</quest_id>
+		<desc>주제 리포트 DLA2</desc>
+		<class>account</class>
+		<duplicate_unit>day</duplicate_unit>
+		<point>1</point>
+		<app_id>1000000004</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_rpt_intell_dla2</quest_id>
+		<desc>지능 리포트 DLA2</desc>
+		<class>account</class>
+		<duplicate_unit>day</duplicate_unit>
+		<point>1</point>
+		<app_id>1000000004</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_rpt_review_dla2</quest_id>
+		<desc>복습 카드 DLA2</desc>
+		<class>account</class>
+		<duplicate_unit>day</duplicate_unit>
+		<point>1</point>
+		<app_id>1000000004</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_rpt_ranking_dla2</quest_id>
+		<desc>랭킹/태그 DLA2</desc>
+		<class>account</class>
+		<duplicate_unit>day</duplicate_unit>
+		<point>1</point>
+		<app_id>1000000004</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_rpt_stat_dla2</quest_id>
+		<desc>이용 통계 DLA2</desc>
+		<class>account</class>
+		<duplicate_unit>day</duplicate_unit>
+		<point>1</point>
+		<app_id>1000000004</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_play_ep_total5_dla2</quest_id>
+		<desc>5회 플레이 DLA2</desc>
+		<class>account</class>
+		<duplicate_unit>day</duplicate_unit>
+		<point>5</point>
+		<app_id>1000000004</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_buy_month_1st_dla2</quest_id>
+		<desc>1개월 첫 구매 DLA2</desc>
+		<class>account</class>
+		<duplicate_unit>once</duplicate_unit>
+		<point>50</point>
+		<app_id>1000000004</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_buy_month_again_dla2</quest_id>
+		<desc>1개월 재구매 DLA2</desc>
+		<class>account</class>
+		<duplicate_unit>once</duplicate_unit>
+		<point>50</point>
+		<app_id>1000000004</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_rpt_overview_dla3</quest_id>
+		<desc>리포트 요약 DLA3</desc>
+		<class>account</class>
+		<duplicate_unit>day</duplicate_unit>
+		<point>1</point>
+		<app_id>1000000005</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_rpt_category_dla3</quest_id>
+		<desc>주제 리포트 DLA3</desc>
+		<class>account</class>
+		<duplicate_unit>day</duplicate_unit>
+		<point>1</point>
+		<app_id>1000000005</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_rpt_intell_dla3</quest_id>
+		<desc>지능 리포트 DLA3</desc>
+		<class>account</class>
+		<duplicate_unit>day</duplicate_unit>
+		<point>1</point>
+		<app_id>1000000005</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_rpt_review_dla3</quest_id>
+		<desc>복습 카드 DLA3</desc>
+		<class>account</class>
+		<duplicate_unit>day</duplicate_unit>
+		<point>1</point>
+		<app_id>1000000005</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_rpt_ranking_dla3</quest_id>
+		<desc>랭킹/태그 DLA3</desc>
+		<class>account</class>
+		<duplicate_unit>day</duplicate_unit>
+		<point>1</point>
+		<app_id>1000000005</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_rpt_stat_dla3</quest_id>
+		<desc>이용 통계 DLA3</desc>
+		<class>account</class>
+		<duplicate_unit>day</duplicate_unit>
+		<point>1</point>
+		<app_id>1000000005</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_play_ep_total5_dla3</quest_id>
+		<desc>5회 플레이 DLA3</desc>
+		<class>account</class>
+		<duplicate_unit>day</duplicate_unit>
+		<point>5</point>
+		<app_id>1000000005</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_buy_month_1st_dla3</quest_id>
+		<desc>1개월 첫 구매 DLA3</desc>
+		<class>account</class>
+		<duplicate_unit>once</duplicate_unit>
+		<point>50</point>
+		<app_id>1000000005</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>m_buy_month_again_dla3</quest_id>
+		<desc>1개월 재구매 DLA3</desc>
+		<class>account</class>
+		<duplicate_unit>once</duplicate_unit>
+		<point>50</point>
+		<app_id>1000000005</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>dla1_visit_day1</quest_id>
+		<desc>연속출석 1일 DLA1</desc>
+		<class>account</class>
+		<duplicate_unit>checkin</duplicate_unit>
+		<point>2</point>
+		<app_id>1000000003</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>dla1_visit_day2</quest_id>
+		<desc>연속출석 2일 DLA1</desc>
+		<class>account</class>
+		<duplicate_unit>checkin</duplicate_unit>
+		<point>2</point>
+		<app_id>1000000003</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>dla1_visit_day3</quest_id>
+		<desc>연속출석 3일 DLA1</desc>
+		<class>account</class>
+		<duplicate_unit>checkin</duplicate_unit>
+		<point>2</point>
+		<app_id>1000000003</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>dla1_visit_day4</quest_id>
+		<desc>연속출석 4일 DLA1</desc>
+		<class>account</class>
+		<duplicate_unit>checkin</duplicate_unit>
+		<point>2</point>
+		<app_id>1000000003</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>dla1_visit_day5</quest_id>
+		<desc>연속출석 5일 DLA1</desc>
+		<class>account</class>
+		<duplicate_unit>checkin</duplicate_unit>
+		<point>2</point>
+		<app_id>1000000003</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>dla1_visit_day6</quest_id>
+		<desc>연속출석 6일 DLA1</desc>
+		<class>account</class>
+		<duplicate_unit>checkin</duplicate_unit>
+		<point>5</point>
+		<app_id>1000000003</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>dla1_visit_day7</quest_id>
+		<desc>연속출석 7일 DLA1</desc>
+		<class>account</class>
+		<duplicate_unit>checkin</duplicate_unit>
+		<point>10</point>
+		<app_id>1000000003</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>dla2_visit_day1</quest_id>
+		<desc>연속출석 1일 DLA2</desc>
+		<class>account</class>
+		<duplicate_unit>checkin</duplicate_unit>
+		<point>2</point>
+		<app_id>1000000004</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>dla2_visit_day2</quest_id>
+		<desc>연속출석 2일 DLA2</desc>
+		<class>account</class>
+		<duplicate_unit>checkin</duplicate_unit>
+		<point>2</point>
+		<app_id>1000000004</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>dla2_visit_day3</quest_id>
+		<desc>연속출석 3일 DLA2</desc>
+		<class>account</class>
+		<duplicate_unit>checkin</duplicate_unit>
+		<point>2</point>
+		<app_id>1000000004</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>dla2_visit_day4</quest_id>
+		<desc>연속출석 4일 DLA2</desc>
+		<class>account</class>
+		<duplicate_unit>checkin</duplicate_unit>
+		<point>2</point>
+		<app_id>1000000004</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>dla2_visit_day5</quest_id>
+		<desc>연속출석 5일 DLA2</desc>
+		<class>account</class>
+		<duplicate_unit>checkin</duplicate_unit>
+		<point>2</point>
+		<app_id>1000000004</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>dla2_visit_day6</quest_id>
+		<desc>연속출석 6일 DLA2</desc>
+		<class>account</class>
+		<duplicate_unit>checkin</duplicate_unit>
+		<point>5</point>
+		<app_id>1000000004</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>dla2_visit_day7</quest_id>
+		<desc>연속출석 7일 DLA2</desc>
+		<class>account</class>
+		<duplicate_unit>checkin</duplicate_unit>
+		<point>10</point>
+		<app_id>1000000004</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>dla3_visit_day1</quest_id>
+		<desc>연속출석 1일 DLA3</desc>
+		<class>account</class>
+		<duplicate_unit>checkin</duplicate_unit>
+		<point>2</point>
+		<app_id>1000000005</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>dla3_visit_day2</quest_id>
+		<desc>연속출석 2일 DLA3</desc>
+		<class>account</class>
+		<duplicate_unit>checkin</duplicate_unit>
+		<point>2</point>
+		<app_id>1000000005</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>dla3_visit_day3</quest_id>
+		<desc>연속출석 3일 DLA3</desc>
+		<class>account</class>
+		<duplicate_unit>checkin</duplicate_unit>
+		<point>2</point>
+		<app_id>1000000005</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>dla3_visit_day4</quest_id>
+		<desc>연속출석 4일 DLA3</desc>
+		<class>account</class>
+		<duplicate_unit>checkin</duplicate_unit>
+		<point>2</point>
+		<app_id>1000000005</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>dla3_visit_day5</quest_id>
+		<desc>연속출석 5일 DLA3</desc>
+		<class>account</class>
+		<duplicate_unit>checkin</duplicate_unit>
+		<point>2</point>
+		<app_id>1000000005</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>dla3_visit_day6</quest_id>
+		<desc>연속출석 6일 DLA3</desc>
+		<class>account</class>
+		<duplicate_unit>checkin</duplicate_unit>
+		<point>5</point>
+		<app_id>1000000005</app_id>
+		<use>true</use>
+	</quest>
+	<quest>
+		<quest_id>dla3_visit_day7</quest_id>
+		<desc>연속출석 7일 DLA3</desc>
+		<class>account</class>
+		<duplicate_unit>checkin</duplicate_unit>
+		<point>10</point>
+		<app_id>1000000005</app_id>
+		<use>true</use>
+	</quest>
+</root>
